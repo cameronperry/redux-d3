@@ -1,0 +1,11 @@
+$header-height: 50px;
+$footer-height: 30px;
+$page-border: 1px solid #999;
+$page-minwidth: 800px;
+$page-padding: 20px;
+$page-background: #eee;
+$content-background: white;
+
+* {
+    box-sizing: border-box;
+}

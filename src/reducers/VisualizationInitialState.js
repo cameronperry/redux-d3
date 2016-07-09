@@ -1,5 +1,5 @@
 export default {
-    value: '',
-    data: [],
-    selection: -1
+  value: '',
+  data: [],
+  selection: -1
 };

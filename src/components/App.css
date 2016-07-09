@@ -2,33 +2,33 @@
 @import 'styles/Mixins.css';
 
 .Root {
-    @mixin absolute 0,0,0,0;
-    min-width: $page-minwidth;
-    overflow: hidden;
+  @mixin absolute 0,0,0,0;
+  min-width: $page-minwidth;
+  overflow: hidden;
 }
 
 .Header {
-    @mixin absolute 0,0,auto,0;
-    height: $header-height;
-    line-height: calc($header-height - 1px);
-    border-bottom: $page-border;
-    font-size: 25px;
-    padding-left: $page-padding;
+  @mixin absolute 0,0,auto,0;
+  height: $header-height;
+  line-height: calc($header-height - 1px);
+  border-bottom: $page-border;
+  font-size: 25px;
+  padding-left: $page-padding;
 }
 
 .Body {
-    @mixin absolute $header-height,0,$footer-height,0;
-    overflow: auto;
-    padding: $page-padding;
-    background: $page-background;
+  @mixin absolute $header-height,0,$footer-height,0;
+  overflow: auto;
+  padding: $page-padding;
+  background: $page-background;
 }
 
 .Footer {
-    @mixin absolute auto,0,0,0;
-    height: $footer-height;
-    line-height: calc($footer-height - 1px);
-    border-top: $page-border;
-    font-size: 16px;
-    color: #aaa;
-    padding-left: $page-padding;
+  @mixin absolute auto,0,0,0;
+  height: $footer-height;
+  line-height: calc($footer-height - 1px);
+  border-top: $page-border;
+  font-size: 16px;
+  color: #aaa;
+  padding-left: $page-padding;
 }

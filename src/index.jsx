@@ -6,8 +6,8 @@ import Routes from './Routes';
 import ConfigureStore from './store/ConfigureStore';
 
 ReactDOM.render(
-    <Provider store={ConfigureStore()}>
-        <Router history={hashHistory}>{Routes}</Router>
-    </Provider>,
-    document.getElementById('app')
+  <Provider store={ConfigureStore()}>
+    <Router history={hashHistory}>{Routes}</Router>
+  </Provider>,
+  window['app']
 );

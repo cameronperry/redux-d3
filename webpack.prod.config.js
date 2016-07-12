@@ -1,3 +1,4 @@
+var webpack = require('webpack')
 var htmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var postCssImport = require('postcss-import');
@@ -36,6 +37,11 @@ module.exports = {
     ];
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': '"production"'
+      }
+    }),
     new ExtractTextPlugin("[name].css"),
     new htmlWebpackPlugin({
       title: 'Redux D3 Demo',
